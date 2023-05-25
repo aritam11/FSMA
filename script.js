@@ -5,5 +5,5 @@ function calculatePrice() {
 
     var adjusted_price_inr = product_price_inr * (Math.round(current_usd_to_inr_rate) / usd_to_inr_rate);
 
-    document.getElementById("adjusted_price_inr").textContent = "Current FSMA price (INR) subjected to current USD to INR rate: " + adjusted_price_inr.toFixed(2);
+    document.getElementById("adjusted_price_inr").textContent = "₹" + adjusted_price_inr.toFixed(2);
 }

@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
+*{
+    box-sizing: border-box;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f1f1f1;
+}
+
+h1 {
+    color: #757b84;
+    text-align: center;
+    margin: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #161f30;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin: auto;
+}
+
+.effective{
+    height: 150px;
+    margin: 20px auto;
+    width: 70%;
+    border-radius: 25px;
+    background: #161f30;
+    box-shadow:  10px 10px 44px #090c13,
+             -10px -10px 44px #23324d;
+}
+
+.calc{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+background: #88a273;
+box-shadow: inset 30px 30px 65px #5a6b4c,
+            inset -30px -30px 65px #b6d99a;
+    width: 435.5px;
+    height: 120px;
+    margin: 15px auto;
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width : 70%;
+    margin : 20px auto;
+}
+
+label {
+    font-weight: bold;
+    color: #757b84;
+
+}
+
+input[type="button"] {
+    width: 70%;
+    padding: 15px 30px;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    margin: 20px auto;
+    border-radius: 63px;
+    background: linear-gradient(145deg, #182133, #141c2b);
+    box-shadow:  15px 15px 72px #090d14,
+             -15px -15px 72px #23314c;
+    cursor: pointer;
+    box-sizing: box ;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 0px;
+    border-radius: 15px;
+    padding-right: 20px;
+    /* box-shadow: inset 2px 5px 10px rgb(67, 67, 67); */
+}
+
+
+input[type="button"]:hover {
+    border-radius: 50px;
+    background: #161f30;
+    box-shadow:  20px 20px 60px #131a29,
+             -20px -20px 60px #192437;  
+}
+
+#cur_price{
+    color: #1a2710;
+    text-align: right;
+    padding:10px 10px 0px 10px;
+}
+
+#adjusted_price_inr
+{
+    color: #1a2710;
+    padding:0px 10px 0px 10px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5rem;
+    width: fit-content;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.price,.rate,.cur_rate{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+
+}
+
+

@@ -3,119 +3,32 @@
 <head>
     <title>Current FSMA Price Calculator</title>
     <script src="script.js"></script>
-    <style>
-
-        *{
-            box-sizing: border-box;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f1f1f1;
-            margin: 0;
-            padding: 0;
-        }
-    
-        h1 {
-            color: #333;
-            text-align: center;
-            margin: 20px 0;
-        }
-    
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
-    
-        form {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            width: 80%;
-            max-width: 80%;
-        }
-    
-        label {
-            font-weight: bold;
-        }
-    
-        input[type="button"] {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            background-color: #4CAF50;
-            color: #fff;
-            cursor: pointer;
-        }
-        
-        input[type="text"] {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            padding-right: 20px;
-        }
-
-    
-        input[type="button"]:hover {
-            background-color: #45a049;
-        }
-    
-        h2 {
-            color: #333;
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        @media only screen and (max-width: 600px) {
-            h1 {
-                font-size: 24px;
-            }
-
-            label {
-                font-size: 16px;
-            }
-
-            input[type="text"],
-            input[type="button"] {
-                font-size: 14px;
-            }
-
-            h2 {
-                font-size: 18px;
-            }
-
-            form {
-                width: 100%;
-                max-width: 100%;
-            }
-
-            .container {
-                height: auto;
-                padding: 20px;
-            }
-        }
-    </style>   
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <h1>Dollar clause FSMA Calculator</h1>
+        <div class="effective">
+            <div class="calc">
+                <p id="cur_price">Current FSMA price (INR) subjected to current USD to INR rate</p>
+                <p id="adjusted_price_inr"></p>
+            </div>   
+        </div>
         <form>
-            <label for="product_price_inr">FSMA offered to the customer (INR):</label>
-            <input type="text" id="product_price_inr" required><br><br>
-            <label for="usd_to_inr_rate">Base Price of USD to INR:</label>
-            <input type="text" id="usd_to_inr_rate" required><br><br>
-            <label for="current_usd_to_inr_rate">Current USD to INR Rate:</label>
-            <input type="text" id="current_usd_to_inr_rate" required><br><br>
+            <div class="price">
+                <label for="product_price_inr">FSMA offered to the customer (INR):</label>
+                <input type="text" id="product_price_inr" required><br><br>
+            </div>
+            <div class="rate">
+                <label for="usd_to_inr_rate">Base Price of USD to INR:</label>
+                <input type="text" id="usd_to_inr_rate" required><br><br>
+            </div>
+            <div class="cur_rate">
+                <label for="current_usd_to_inr_rate">Current USD to INR Rate:</label>
+                <input type="text" id="current_usd_to_inr_rate" required><br><br>
+            </div>
             <input type="button" value="Calculate effective FSMA price in INR" onclick="calculatePrice()"><br><br>
         </form>
-        <h2 id="adjusted_price_inr"></h2>
     </div>
 </body>
 </html>
