@@ -37,7 +37,7 @@ h1 {
 }
 
 .effective{
-    height: 150px;
+    height: 160px;
     margin: 0px auto 20px auto;
     /* width: 465.5px; */
     width :40%;
@@ -59,7 +59,7 @@ h1 {
     /* width: 435.5px; */
     width : 95%;
     max-width: 435.5px;
-    height: 120px;
+    height: 130px;
     margin: 15px auto;
     
 }
@@ -70,7 +70,7 @@ form {
     align-items: center;
     /* justify-content: space-evenly; */
     width : 70%;
-    margin : 20px auto;
+    margin : 20px auto 0px auto;
 }
 
 label {
