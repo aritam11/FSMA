@@ -76,8 +76,8 @@ label {
 }
 
 input[type="button"] {
-    width: 40%;
-    padding: 15px 10px;
+    width: fit-content;
+    padding: 15px 20px;
     color: #161f30;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
