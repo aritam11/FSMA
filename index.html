@@ -4,16 +4,29 @@
     <title>Current FSMA Price Calculator</title>
     <script src="script.js"></script>
     <style>
+
+        *{
+            box-sizing: border-box;
+        }
         body {
             font-family: Arial, sans-serif;
             background-color: #f1f1f1;
             margin: 0;
-            padding: 20px;
+            padding: 0;
         }
     
         h1 {
             color: #333;
             text-align: center;
+            margin: 20px 0;
+        }
+    
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
         }
     
         form {
@@ -21,28 +34,34 @@
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 80%;
         }
     
         label {
             font-weight: bold;
-            font-size:1.5rem;
         }
     
-        input[type="text"],
         input[type="button"] {
             width: 100%;
-            padding: 10px 0px 10px 10px;
+            padding: 10px;
             margin-bottom: 10px;
             border: 1px solid #ccc;
             border-radius: 4px;
-        }
-    
-        input[type="button"] {
             background-color: #4CAF50;
             color: #fff;
             cursor: pointer;
-            font-size: 1rem;
         }
+        
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding-right: 20px;
+        }
+
     
         input[type="button"]:hover {
             background-color: #45a049;
@@ -53,19 +72,21 @@
             text-align: center;
             margin-top: 20px;
         }
-    </style>    
+    </style>   
 </head>
 <body>
-    <h1>Current FSMA Price Calculator</h1>
-    <form>
-        <label for="product_price_inr">FSMA offered to customer (INR):</label>
-        <input type="text" id="product_price_inr" required><br><br>
-        <label for="usd_to_inr_rate">Base Price of USD to INR:</label>
-        <input type="text" id="usd_to_inr_rate" required><br><br>
-        <label for="current_usd_to_inr_rate">Current USD to INR Rate:</label>
-        <input type="text" id="current_usd_to_inr_rate" required><br><br>
-        <input type="button" value="Calculate effective FSMA price in INR" onclick="calculatePrice()"><br><br>
-    </form>
-    <h2 id="adjusted_price_inr"></h2>
+    <div class="container">
+        <h1>Current FSMA Price Calculator</h1>
+        <form>
+            <label for="product_price_inr">FSMA offered to customer (INR):</label>
+            <input type="text" id="product_price_inr" required><br><br>
+            <label for="usd_to_inr_rate">Base Price of USD to INR:</label>
+            <input type="text" id="usd_to_inr_rate" required><br><br>
+            <label for="current_usd_to_inr_rate">Current USD to INR Rate:</label>
+            <input type="text" id="current_usd_to_inr_rate" required><br><br>
+            <input type="button" value="Calculate effective FSMA price in INR" onclick="calculatePrice()"><br><br>
+        </form>
+        <h2 id="adjusted_price_inr"></h2>
+    </div>
 </body>
 </html>
