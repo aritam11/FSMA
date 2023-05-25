@@ -72,11 +72,40 @@
             text-align: center;
             margin-top: 20px;
         }
+
+        @media only screen and (max-width: 600px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            label {
+                font-size: 16px;
+            }
+
+            input[type="text"],
+            input[type="button"] {
+                font-size: 14px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            form {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .container {
+                height: auto;
+                padding: 20px;
+            }
+        }
     </style>   
 </head>
 <body>
     <div class="container">
-        <h1>Current FSMA Price Calculator</h1>
+        <h1>Dollar clause FSMA Calculator</h1>
         <form>
             <label for="product_price_inr">FSMA offered to customer (INR):</label>
             <input type="text" id="product_price_inr" required><br><br>
