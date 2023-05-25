@@ -8,12 +8,6 @@
 <body>
     <div class="container">
         <h1>Dollar clause FSMA Calculator</h1>
-        <div class="effective">
-            <div class="calc">
-                <p id="cur_price">Current FSMA price (INR) subjected to current USD to INR rate</p>
-                <p id="adjusted_price_inr"></p>
-            </div>   
-        </div>
         <form>
             <div class="price">
                 <label for="product_price_inr">FSMA offered to the customer (INR):</label>
@@ -29,6 +23,12 @@
             </div>
             <input type="button" value="Calculate effective FSMA price in INR" onclick="calculatePrice()"><br><br>
         </form>
+        <div class="effective">
+            <div class="calc">
+                <p id="cur_price">Current FSMA price (INR) subjected to current USD to INR rate</p>
+                <p id="adjusted_price_inr">₹0</p>
+            </div>   
+        </div>
     </div>
 </body>
 </html>

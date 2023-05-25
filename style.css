@@ -10,12 +10,12 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f1f1f1;
-    overflow: hidden;
 }
 
 h1 {
-    color: #757b84;
+    color: #fff;
     text-align: center;
+    font-size: 2rem;
     margin: 20px;
 }
 
@@ -36,7 +36,8 @@ h1 {
 .effective{
     height: 150px;
     margin: 20px auto;
-    width: 465.5px;
+    /* width: 465.5px; */
+    width :40%;
     border-radius: 25px;
     background: #161f30;
     box-shadow:  10px 10px 44px #090c13,
@@ -47,10 +48,11 @@ h1 {
     display: flex;
     flex-direction: column;
     border-radius: 15px;
-background: #88a273;
-box-shadow: inset 30px 30px 65px #5a6b4c,
+    background: #88a273;
+    box-shadow: inset 30px 30px 65px #5a6b4c,
             inset -30px -30px 65px #b6d99a;
-    width: 435.5px;
+    /* width: 435.5px; */
+    width : 95%;
     height: 120px;
     margin: 15px auto;
     
@@ -67,21 +69,27 @@ form {
 
 label {
     font-weight: bold;
+    font-size: 1.5rem;;
     color: #757b84;
+    padding:5px
 
 }
 
 input[type="button"] {
-    width: 70%;
-    padding: 15px 30px;
-    color: #fff;
+    width: 40%;
+    padding: 15px 10px;
+    color: #161f30;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
     margin: 20px auto;
     border-radius: 63px;
-    background: linear-gradient(145deg, #182133, #141c2b);
-    box-shadow:  15px 15px 72px #090d14,
-             -15px -15px 72px #23314c;
+    /* background: linear-gradient(145deg, #182133, #141c2b); */
+    box-shadow: inset 15px 15px 30px #a8a8a8,
+            inset -15px -15px 30px #ffffff;
+            /* background: linear-gradient(145deg, #ffffff, #e6e6e6);
+box-shadow:  15px 15px 30px #090c13,
+             -15px -15px 30px #23324d; */
+    /* background: #fff; */
     cursor: pointer;
     box-sizing: box ;
 }
@@ -89,6 +97,7 @@ input[type="button"] {
 input[type="text"] {
     width: 100%;
     padding: 10px;
+    text-align: center;
     border: 0px;
     border-radius: 15px;
     padding-right: 20px;
@@ -101,13 +110,14 @@ input[type="text"] {
 input[type="button"]:active {
     border-radius: 50px;
     background: #161f30;
+    color: #fff;
     box-shadow:  20px 20px 60px #131a29,
              -20px -20px 60px #192437;  
 }
 
 #cur_price{
     color: #1a2710;
-    text-align: right;
+    text-align: center;
     padding:10px 10px 0px 10px;
 }
 
@@ -119,8 +129,7 @@ input[type="button"]:active {
     font-size: 2.5rem;
     width: fit-content;
     height: fit-content;
-    margin-left: auto;
-    margin-right: 0;
+    margin: auto;
 }
 
 .price,.rate,.cur_rate{
