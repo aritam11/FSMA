@@ -7,25 +7,25 @@
 </head>
 <body>
     <div class="container">
-        <h1>Dollar clause FSMA Calculator</h1>
+        <h1>Dollar Clause FSMA Calculator</h1>
         <form id="boxes">
             <div class="price">
                 <label for="product_price_inr">FSMA offered to the customer (INR):</label>
                 <input type="text" class="rupee" id="product_price_inr" onblur="handleChange1()" placeholder="₹0" required><br><br>
             </div>
             <div class="rate">
-                <label for="usd_to_inr_rate">Base Price of USD to INR:</label>
+                <label for="usd_to_inr_rate">Base line currency rate (USD to INR):</label>
                 <input type="text" class="rupee"  id="usd_to_inr_rate" onblur="handleChange2()" placeholder="₹0" required><br><br>
             </div>
             <div class="cur_rate">
-                <label for="current_usd_to_inr_rate">Current USD to INR Rate:</label>
+                <label for="current_usd_to_inr_rate">Current currency rate (USD to INR):</label>
                 <input type="text" class="rupee" id="current_usd_to_inr_rate" onblur="handleChange3()" placeholder="₹0" required><br><br>
             </div>
-            <input type="button" value="Calculate effective FSMA price in INR" onclick="calculatePrice()"><br><br>
+            <input type="button" value="Calculate" onclick="calculatePrice()"><br><br>
         </form>
         <div class="effective">
             <div class="calc">
-                <p id="cur_price">Current FSMA price (INR) subjected to current USD to INR rate</p>
+                <p id="cur_price">Current FSMA rate subjected to effective currency rate (USD to INR)</p>
                 <p id="adjusted_price_inr">₹0</p>
             </div>   
         </div>

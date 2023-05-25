@@ -17,6 +17,7 @@ h1 {
     text-align: center;
     font-size: 2rem;
     margin: 20px;
+    border-bottom: 2px solid ;
 }
 
 .container {
@@ -82,22 +83,18 @@ label {
 
 input[type="button"] {
     width: fit-content;
-    padding: 15px 20px;
+    padding: 15px 35px;
     color: #161f30;
     font-weight: bold;
+    text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
     margin: 20px auto;
     border-radius: 63px;
-    /* background: linear-gradient(145deg, #182133, #141c2b); */
     background: #161f30;
     color: #fff;
     box-shadow:  20px 20px 60px #131a29,
              -20px -20px 60px #192437;
     border: 2px solid #fff;
-            /* background: linear-gradient(145deg, #ffffff, #e6e6e6);
-box-shadow:  15px 15px 30px #090c13,
-             -15px -15px 30px #23324d; */
-    /* background: #fff; */
     cursor: pointer;
     box-sizing: box ;
 }
@@ -128,6 +125,7 @@ input[type="button"]:active {
     color: #1a2710;
     text-align: center;
     font-family: 'Oswald', sans-serif;
+    font-size: 0.95rem;
     padding:10px 10px 0px 10px;
 }
 
