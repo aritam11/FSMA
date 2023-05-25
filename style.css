@@ -89,8 +89,11 @@ input[type="button"] {
     margin: 20px auto;
     border-radius: 63px;
     /* background: linear-gradient(145deg, #182133, #141c2b); */
-    box-shadow: inset 15px 15px 30px #a8a8a8,
-            inset -15px -15px 30px #ffffff;
+    background: #161f30;
+    color: #fff;
+    box-shadow:  20px 20px 60px #131a29,
+             -20px -20px 60px #192437;
+    border: 2px solid #fff;
             /* background: linear-gradient(145deg, #ffffff, #e6e6e6);
 box-shadow:  15px 15px 30px #090c13,
              -15px -15px 30px #23324d; */
@@ -115,8 +118,8 @@ input[type="text"] {
 
 input[type="button"]:active {
     border-radius: 50px;
-    background: #161f30;
-    color: #fff;
+    background: #fff;
+    color: #161f30;
     box-shadow:  20px 20px 60px #131a29,
              -20px -20px 60px #192437;  
 }
@@ -124,6 +127,7 @@ input[type="button"]:active {
 #cur_price{
     color: #1a2710;
     text-align: center;
+    font-family: 'Oswald', sans-serif;
     padding:10px 10px 0px 10px;
 }
 
