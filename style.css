@@ -41,6 +41,7 @@ h1 {
     /* width: 465.5px; */
     width :40%;
     max-width: 465.5px;
+    min-width: 376px;
     border-radius: 25px;
     background: #161f30;
     box-shadow:  10px 10px 44px #090c13,
