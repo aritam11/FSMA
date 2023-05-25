@@ -10,6 +10,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f1f1f1;
+    overflow: hidden;
 }
 
 h1 {
@@ -59,7 +60,7 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     width : 70%;
     margin : 20px auto;
 }
@@ -88,15 +89,16 @@ input[type="button"] {
 input[type="text"] {
     width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
     border: 0px;
     border-radius: 15px;
     padding-right: 20px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
     /* box-shadow: inset 2px 5px 10px rgb(67, 67, 67); */
 }
 
 
-input[type="button"]:hover {
+input[type="button"]:active {
     border-radius: 50px;
     background: #161f30;
     box-shadow:  20px 20px 60px #131a29,
@@ -123,9 +125,11 @@ input[type="button"]:hover {
 
 .price,.rate,.cur_rate{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     width: 70%;
-
+    margin : 5px;
+    align-items: center;
 }
 
 
