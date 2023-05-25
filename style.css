@@ -9,7 +9,7 @@
 }
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f1f1f1;
+    background-color: #161f30;
 }
 
 h1 {
@@ -24,13 +24,14 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 100%;
     background-color: #161f30;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     width: 100%;
     margin: auto;
+    overflow: auto;
 }
 
 .effective{
@@ -38,6 +39,7 @@ h1 {
     margin: 20px auto;
     /* width: 465.5px; */
     width :40%;
+    max-width: 465.5px;
     border-radius: 25px;
     background: #161f30;
     box-shadow:  10px 10px 44px #090c13,
@@ -53,6 +55,7 @@ h1 {
             inset -30px -30px 65px #b6d99a;
     /* width: 435.5px; */
     width : 95%;
+    max-width: 435.5px;
     height: 120px;
     margin: 15px auto;
     
