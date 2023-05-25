@@ -107,6 +107,7 @@ input[type="text"] {
     border-radius: 15px;
     padding-right: 20px;
     font-weight: bold;
+    font-size: 1.5rem;
     font-family: 'Poppins', sans-serif;
     /* box-shadow: inset 2px 5px 10px rgb(67, 67, 67); */
 }
