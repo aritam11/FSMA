@@ -25,12 +25,13 @@
     
         label {
             font-weight: bold;
+            font-size:20px
         }
     
         input[type="text"],
         input[type="button"] {
             width: 100%;
-            padding: 10px;
+            padding: 10px 0px 10px 10px;
             margin-bottom: 10px;
             border: 1px solid #ccc;
             border-radius: 4px;
@@ -56,13 +57,13 @@
 <body>
     <h1>Current FSMA Price Calculator</h1>
     <form>
-        <label for="product_price_inr">FSMA Price (INR):</label>
+        <label for="product_price_inr">FSMA offered to customer (INR):</label>
         <input type="text" id="product_price_inr" required><br><br>
-        <label for="usd_to_inr_rate">Base Price (USD to INR):</label>
+        <label for="usd_to_inr_rate">Base Price of USD to INR:</label>
         <input type="text" id="usd_to_inr_rate" required><br><br>
         <label for="current_usd_to_inr_rate">Current USD to INR Rate:</label>
         <input type="text" id="current_usd_to_inr_rate" required><br><br>
-        <input type="button" value="Calculate" onclick="calculatePrice()"><br><br>
+        <input type="button" value="Calculate effective FSMA price in INR" onclick="calculatePrice()"><br><br>
     </form>
     <h2 id="adjusted_price_inr"></h2>
 </body>
