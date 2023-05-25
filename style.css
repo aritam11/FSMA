@@ -38,7 +38,7 @@ h1 {
 
 .effective{
     height: 150px;
-    margin: 20px auto;
+    margin: 0px auto 20px auto;
     /* width: 465.5px; */
     width :40%;
     max-width: 465.5px;
