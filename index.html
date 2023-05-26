@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>Dollar Clause FSMA Calculator</h1>
     <div class="container">
-        <h1>Dollar Clause FSMA Calculator</h1>
         <form id="boxes">
             <div class="price">
                 <label for="product_price_inr">FSMA offered to the customer (INR):</label>
@@ -21,8 +21,8 @@
                 <label for="current_usd_to_inr_rate">Current currency rate (USD to INR):</label>
                 <input type="text" class="rupee" id="current_usd_to_inr_rate" onblur="handleChange3()" placeholder="₹0" required><br><br>
             </div>
-            <input type="button" value="Calculate" onclick="calculatePrice()"><br><br>
         </form>
+        <input type="button" value="Calculate" onclick="calculatePrice()"><br><br>
         <div class="effective">
             <div class="calc">
                 <p id="cur_price"><span id="bold_price">EFFECTIVE FSMA RATE</span> <br> subjected to current currency rate <br> (USD to INR)</p>

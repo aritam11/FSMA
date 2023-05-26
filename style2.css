@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
+*{
+    box-sizing: border-box;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #161f30;
+    display: flex;
+    flex-direction: column;
+    height : 100vh;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    width: fit-content;
+    font-size: 2rem;
+    margin: 20px auto 20px auto;
+    border-bottom: 2px solid ;
+}
+
+.container {
+    flex-grow:1 ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* min-height: fit-content; */
+    background-color: #161f30;
+    /* padding: 20px; */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin:20px auto;
+    overflow: auto;
+}
+
+.effective{
+    height: 160px;
+    margin: 0px auto 20px auto;
+    /* width: 465.5px; */
+    width :40%;
+    max-width: 465.5px;
+    min-width: 376px;
+    border-radius: 25px;
+    background: #161f30;
+    box-shadow:  10px 10px 44px #090c13,
+             -10px -10px 44px #23324d;
+}
+
+.calc{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background: #88a273;
+    /* box-shadow: inset 30px 30px 65px #5a6b4c,
+            inset -30px -30px 65px #b6d99a; */
+    /* width: 435.5px; */
+    width : 95%;
+    max-width: 435.5px;
+    height: 130px;
+    margin: 15px auto;
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    width : 50%;
+    height: 90%;
+    margin : 20px auto 2px auto;
+}
+
+label {
+    font-weight: bold;
+    font-size: 1.5rem;;
+    color: #757b84;
+    padding:5px
+
+}
+
+input[type="button"] {
+    width: fit-content;
+    padding: 15px 35px;
+    color: #161f30;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    margin: 0px auto;
+    border-radius: 63px;
+    background: #161f30;
+    color: #fff;
+    box-shadow:  20px 20px 60px #131a29,
+             -20px -20px 60px #192437;
+    border: 2px solid #fff;
+    cursor: pointer;
+    box-sizing: box ;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+
+input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    text-align: center;
+    border: 0px;
+    border-radius: 15px;
+    padding-right: 20px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    /* box-shadow: inset 2px 5px 10px rgb(67, 67, 67); */
+}
+
+
+input[type="button"]:active {
+    border-radius: 50px;
+    background: #fff;
+    color: #161f30;
+    box-shadow:  20px 20px 60px #131a29,
+             -20px -20px 60px #192437;  
+}
+
+#cur_price{
+    color: #1a2710;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.95rem;
+    padding:10px 10px 0px 10px;
+}
+
+#adjusted_price_inr
+{
+    color: #1a2710;
+    padding:0px 10px 0px 10px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5rem;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+}
+
+#bold_price{
+    font-weight : bold;
+    
+}
+.price,.rate,.cur_rate{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+    height: 25%;
+    margin : 5px;
+    align-items: center;
+}
+
+
